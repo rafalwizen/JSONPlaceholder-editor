@@ -27,4 +27,9 @@ public class JsonPlaceholderController {
 		jsonPlaceholderEditorService.savePostsToFile(jsonPlaceholderEditorService.getAllPosts());
 		return "save-form";
 	}
+	
+	@RequestMapping("/exit")
+	public void exit() {
+		System.exit(0);
+	}
 }
